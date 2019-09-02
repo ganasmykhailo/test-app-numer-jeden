@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   gitHubApi: {
     url: 'https://api.github.com',
-    token: 'a1995c8cb1ef8c96aed14c2ccc67d49f1df23e4a'
+    token: 'd224b3d694398ff547837e77b630532d1d3492a9'
   },
 };
 
