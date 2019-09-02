@@ -1,0 +1,41 @@
+.page-wrapper{
+  width: 100%;
+  position: relative;
+  padding: 60px 0;
+}
+
+h1 {
+  color: #000;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.form-block {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  input {
+    font-size: 15px;
+    padding: 10px 15px;
+    width: 100%;
+  }
+
+  .submit-button {
+    font-size: 15px;
+    background-color: darkslategrey;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    margin: 10px 25px;
+
+    &:disabled {
+      background-color: darkgray;
+    }
+  }
+}
+
+.content-block{
+  padding: 60px 100px;
+}

@@ -1,0 +1,28 @@
+<div class="page-wrapper">
+
+  <h1>Detail user</h1>
+
+  <a [routerLink]="'/'" class="back-link">
+    Go Home
+  </a>
+
+  <p *ngIf="!repos.length">
+    No repos ...
+  </p>
+
+  <div class="content-block" *ngIf="repos.length">
+    <button class="sort-button" (click)="sortByValue('name')">
+      Sort by name
+    </button>
+    <button class="sort-button" (click)="sortByValue('forks_count')">
+      Sort by forks count
+    </button>
+    <div class="item" *ngFor="let item of repos">
+      <ul>
+        <li>{{item.name}}</li>
+        <li>{{item.forks_count}}</li>
+      </ul>
+    </div>
+  </div>
+
+</div>

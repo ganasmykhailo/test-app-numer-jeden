@@ -1,0 +1,25 @@
+<div class="user-box">
+  <img *ngIf="gitHubUser.avatar_url" [src]="gitHubUser.avatar_url">
+  <ul>
+    <li *ngIf="gitHubUser.name">
+      Name:
+      <span>{{gitHubUser.name}}</span>
+    </li>
+    <li *ngIf="gitHubUser.company">
+      Name:
+      <span>{{gitHubUser.company}}</span>
+    </li>
+    <li *ngIf="gitHubUser.email">
+      Mail:
+      <span>{{gitHubUser.email}}</span>
+    </li>
+    <li *ngIf="gitHubUser.updated_at">
+      Updated at:
+      <span>{{gitHubUser.updated_at | date}}</span>
+    </li>
+    <li *ngIf="gitHubUser.followers">
+      Followers count:
+      <span>{{gitHubUser.followers}}</span>
+    </li>
+  </ul>
+</div>
